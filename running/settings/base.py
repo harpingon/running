@@ -14,6 +14,10 @@ import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR,  'templates'),
+)
+
 # here() gives us file paths from the root of the system to the directory
 # holding the current file.
 #here = lambda * x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
