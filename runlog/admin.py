@@ -12,15 +12,15 @@ class ManufacturerAdmin(admin.ModelAdmin):
     search_fileds = ["name",]
 
 class ShoeAdmin(admin.ModelAdmin):
-    fields = ("name","purchased","rating","manufacturer",)
-    list_display = ["name","purchased","rating","manufacturer",]
+    fields = ("user","name","purchased","rating","manufacturer",)
+    list_display = ["user","name","purchased","rating","manufacturer",]
     list_editable = ["purchased","rating","manufacturer",]
     list_filter = ["manufacturer",]
     search_fields = ["name","manufacturer",]
 
 class RunAdmin(admin.ModelAdmin):
-    fields = ("rundate","distance","calories","shoe","notes",)
-    list_display = ["rundate","distance","calories","shoe","notes",]
+    fields = ("user","rundate","distance","calories","shoe","notes",)
+    list_display = ["user","rundate","distance","calories","shoe","notes",]
     list_editable = ["distance","calories","shoe","notes",]
     list_filter = ["shoe",]
 
