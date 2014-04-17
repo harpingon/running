@@ -34,7 +34,7 @@ TEMPLATE_DIRS = (
 SECRET_KEY = 'qu0$ex49*e^)t=wo8(g(mv4z=$@8cfqz4x*zmq7ci!fewxyg!3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 
