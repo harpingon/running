@@ -54,6 +54,7 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS = (
     'south',
+    'gunicorn',
 )
 
 LOCAL_APPS = (
@@ -101,3 +102,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGGING = {
+    'version': 1,
+}
+
+STATIC_ROOT = (
+    os.path.join(BASE_DIR,  'static')
+)
