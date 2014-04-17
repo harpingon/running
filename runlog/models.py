@@ -12,7 +12,7 @@ class Manufacturer(models.Model):
 class Shoe(models.Model):
     name = models.CharField(max_length=30)
     purchased = models.DateField()
-    rating = models.PositiveSmallIntegerField(validators=[MinValueValidator(0), MaxValueValidator(5)])
+    rating = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
     manufacturer = models.ForeignKey(Manufacturer)
 
     def __unicode__(self):
