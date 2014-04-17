@@ -1,0 +1,8 @@
+2014-04-17 10:51:43 [9626] [INFO] Starting gunicorn 18.0
+2014-04-17 10:51:43 [9626] [INFO] Listening at: http://0.0.0.0:8000 (9626)
+2014-04-17 10:51:43 [9626] [INFO] Using worker: sync
+2014-04-17 10:51:43 [9632] [INFO] Booting worker with pid: 9632
+2014-04-17 10:51:43 [9635] [INFO] Booting worker with pid: 9635
+2014-04-17 10:51:43 [9636] [INFO] Booting worker with pid: 9636
+2014-04-17 10:54:58 [9626] [INFO] Handling signal: int
+2014-04-17 10:54:58 [9626] [INFO] Shutting down: Master
