@@ -10,6 +10,7 @@ class Manufacturer(models.Model):
         return self.name
 
 class Shoe(models.Model):
+    user = models.ForeignKey(User)
     name = models.CharField(max_length=30)
     purchased = models.DateField()
     rating = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
@@ -19,6 +20,7 @@ class Shoe(models.Model):
         return self.name
 
 class Run(models.Model):
+    user = models.ForeignKey(User)
     rundate = models.DateField()
     distance = models.DecimalField(max_digits=3, decimal_places=1)
     calories = models.PositiveSmallIntegerField()
